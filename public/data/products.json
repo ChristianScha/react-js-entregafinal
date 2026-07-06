@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "MacBook Pro M4 512GB",
+    "precio": 6650000,
+    "imagen": "/img/MacBookProM4.png"
+  },
+  {
+    "id": "2",
+    "nombre": "iPad Pro 128GB",
+    "precio": 4425579,
+    "imagen": "/img/IpadPro.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "iPhone 17 Pro Max 512GB",
+    "precio": 2949999,
+    "imagen": "/img/17ProM.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "AirPods Pro 3",
+    "precio": 601299,
+    "imagen": "/img/AirpPro3.png"
+  }
+]
