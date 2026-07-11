@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getProducts } from "../../services/productsService";
 import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = () => {
@@ -6,13 +7,10 @@ export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => res.json())
+    getProducts()
       .then((data) => setProducts(data))
-      .catch((err) => console.log("Error cargando productos:", err))
-      .finally(() => {
-        setLoading(false);
-      });
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <p>Cargando productos...</p>;
